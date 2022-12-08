@@ -52,21 +52,21 @@ SLN_Final.Rmd
 Graphics:
 
 
-graphics/Lymph_Drainage.png
+Lymph_Drainage.png
 
     This is our first figure and depicts the complex lymph drainage of the uteri.
     
 
-graphics/SLN_procedure.png
+SLN_procedure.png
 
     This is our second figure and depicts the SLN and lymphatic vessel excision and             ultrastaging procedure of the uteri.
 
-graphics/Location_freq_SLN.png
+Location_freq_SLN.png
 
     This is our third figure and depicts the location and frequency of sentinel lymph nodes     in Grade 1 endometrial cancer.
     
 
- graphics/david.png   
+ david.png   
  
     This is my thanks to David.
     
@@ -80,10 +80,21 @@ SNL_Harvard_1.csv
 
     
 
-To restore the package environment:
+To sync the package repository:
 
-    In terminal, run make install 
+1.) Use `source("renv/activate.R")` -> `renv::restore()`
+
+2.) Use `make install`
 
 To create the final report:
 
-    In the terminal, run make SLN_Final.html 
+    In the command line of the terminal, use "Make" to render the report.
+    
+To build the image:
+
+1.) docker build -t slnfp_new .
+
+2.) Link: https://hub.docker.com/repository/docker/minmehar/slnfp_new
+
+3.) docker pull minmehar/slnfp_new `#this will pull from DockerHub`
+

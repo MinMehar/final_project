@@ -48,6 +48,11 @@ pull image:
 	docker pull minmehar/slnfp_new
 	
 #Docker run command
+
 report.html:
 	docker run -v "/$$(pwd)/report":/project/report minmehar/slnfp_new
+	
+#full path
+report.html: 
+ docker run -it -v "/Users/sevenguccitearsgmail.com/final_project/report":/project/report minmehar/slnfp_new
 	

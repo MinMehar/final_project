@@ -98,3 +98,6 @@ To build the image:
 
 3.) docker pull minmehar/slnfp_new `#this will pull from DockerHub`
 
+To use Docker to run this report:
+
+In command line, use `make report.html`
